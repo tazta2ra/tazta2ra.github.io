@@ -4,6 +4,8 @@
 <link rel="icon" type="image/x-icon" href="assets/icon.ico">
 <title>Blue Lotus : Beyond</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div class="container main ">
@@ -17,13 +19,13 @@
             <h4>A massive vanilla+ modpack focused on exploration and adventure while enhancing vanilla gamplay with lots of Quality of Life improvements. </h4>
         </center>
         </div>
-        <div id="nav">
-        <ul >
-            <li><a href="https://modrinth.com/modpack/bluelotus-beyond/versions">Downloads</a></li>
-            <li><a href="https://modrinth.com/modpack/bluelotus-beyond/changelog">Changelog</a></li>
-            <li><a href="https://modrinth.com/modpack/bluelotus-beyond/gallery">Gallery</a></li>
-            <li style="float:right"><a class="active" href="https://modrinth.com/modpack/bluelotus-beyond">Modrinth</a></li>
-            </ul>
+        <div class="nav" id="Nav">
+            <a class="coll" href="javascript:void(0);" onclick="Collapse()"><i class="fa fa-bars"></i></a>
+
+            <a class="active" href="https://modrinth.com/modpack/bluelotus-beyond">Modrinth</a>
+            <a href="https://modrinth.com/modpack/bluelotus-beyond/versions">Downloads</a>
+            <a href="https://modrinth.com/modpack/bluelotus-beyond/changelog">Changelog</a>
+            <a href="https://modrinth.com/modpack/bluelotus-beyond/gallery">Gallery</a>
         </div>
         <br>
         
@@ -420,4 +422,14 @@
 </div>
 </div>
 </body>
+<script>
+    function Collapse() {
+      var x = document.getElementById("Nav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+    </script>
 </html> 
