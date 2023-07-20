@@ -22,10 +22,13 @@
         </div>
         <div class="nav" id="Nav">
             <a class="coll" href="javascript:void(0);" onclick="Collapse()"><i class="fa fa-bars"></i></a>
-            <a class="active" href="https://modrinth.com/modpack/bluelotus-beyond">Modrinth</a>
-            <a href="https://modrinth.com/modpack/bluelotus-beyond/versions">Downloads</a>
+            <a class="active" href="#download">Download</a>
+            <a href="https://modrinth.com/modpack/bluelotus-beyond">Modrinth</a>
+            <a href="https://modrinth.com/modpack/bluelotus-beyond/versions">Versions</a>
             <a href="https://modrinth.com/modpack/bluelotus-beyond/changelog">Changelog</a>
             <a href="https://modrinth.com/modpack/bluelotus-beyond/gallery">Gallery</a>
+            <a href="#faq">Frequently Asked Questions</a>
+
         </div>
         <br>
         
@@ -104,12 +107,35 @@
             <br>
             <b>Inventory</b>
             </center>
-            
-            
-            
+            <!-- Modrinth text end -->
+            <br>
+        <hr>
+        <h1 class="center" id="download">How to install?</h1>
+        
+        <h3>For players:</h3>
+            <p>Download a launcher that supports modrinth (e.g. <a href="https://prismlauncher.org/">Prism Launcher</a>) then follow the <a href="https://docs.modrinth.com/docs/modpacks/playing_modpacks/#multimc-and-prism-launcher">installation instructions</a> for the launcher of your choice.</p>
+        <h3>For Servers:</h3>
+        <ul>
+            <li>Download the latest version of <a href="https://github.com/nothub/mrpack-install/releases">mrpack-install</a></li>
+            <li>Open the command line, navigate to the directory</li>
+            <li>Run
+                <code>mrpack-install ElPWwjX0</code>
+             </li>
+             <li>Wait for the download to finish</li>
+             <li>Navigate into the new "mc" folder</li>
+             <li>Now run <code>java -Xmx3G -Xms1G  -jar quilt-server-launch.jar</code></li>
+                <ul style="color: gray ;">Set <code>-Xmx</code> to the amount of RAM you want your server to use. (at least 2.5GB)</ul>
+             <li>You're Done!</li>
+        </ul>
+        <br>
+        <br>
+
+
+            <!-- Modrinth text start -->
             <hr>
+            <br>
             <center>
-            <font size="6"> <b>Frequently Asked Questions</b></font>
+            <font size="6" id="faq"> <b>Frequently Asked Questions</b></font>
             </center>
             <p></p>
             <details>
@@ -423,8 +449,7 @@
                         <li><a href="https://modrinth.com/shader/super-duper-vanilla">🟩 Super Duper Vanilla</a></li>
                         </ul>
                     </details>
-        </div><!-- Modrinth text end -->
-               
+
                     <br>
                     <br>
                     <p style="text-align: center;">Made by Tazta2ra</p>                    

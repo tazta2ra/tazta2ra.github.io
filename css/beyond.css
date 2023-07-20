@@ -3,8 +3,9 @@
 html {
   padding-left: 20px;
   padding-right: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1;
+}
+.content {
+  padding: 30px;
 
 }
 }
@@ -15,6 +16,7 @@ html {
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh; 
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
@@ -35,16 +37,16 @@ body {
 }
 
 .content {
-  padding: 30px;
   color: rgb(216, 216, 216);
 
 }
 
   /* -------------------------- */
 
-h1 {
-  font-family:sans-serif;
-  color: rgb(238, 255, 0);
+code {
+  color: white; 
+  font-size: larger; 
+  background-color: black;
 }
 
 details {
@@ -123,7 +125,7 @@ p.border {
 
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 952px) {
     .nav a:not(.active) {display: none;}
     .nav a.coll {
       float: right;
@@ -131,7 +133,7 @@ p.border {
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 952px) {
     .nav.responsive {position: relative;}
     .nav.responsive .coll {
       right: 0;
