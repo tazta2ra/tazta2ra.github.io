@@ -6,37 +6,38 @@ html {
 }
 
 }
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+}
+
 body {
   height: 100vh; 
-  background-image: url("assets/background.png");
+  background-image: url("../assets/background.png");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-.main {
+  /* -------------------------- */
+
+.container {
   max-width: 90em;
   position: relative;
   margin: 0 auto ;
-  
-}
-.container {
   background-color: rgb(44, 44, 44);
   border: 2px solid rgb(255, 255, 255);
-  padding-bottom: 100px;
   border-radius: 20px;
 }
+
 .content {
   padding: 30px;
   color: rgb(216, 216, 216);
 
 }
-@media screen and (max-width: 600px) {
-.content {
-  padding: 10px;
-}
-}
+
   /* -------------------------- */
 
 h1 {
@@ -63,6 +64,14 @@ a {
   color: aliceblue;
 }
 
+table, th, td {
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+  /* -------------------------- */
+
 p.border {
   padding: 10px;
   border: 2px solid rgb(255, 255, 255);
@@ -73,13 +82,6 @@ p.border {
 
 .center {
   text-align: center;
-}
-
-table, th, td {
-  padding: 10px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  border-collapse: collapse;
 }
 
   /* -------------------------- */
@@ -110,12 +112,11 @@ table, th, td {
 
   }
 
-  /* Change the link color to #111 (black) on hover */
   .nav a:hover {
     background-color: #333232;
   }
 
-.active {
+.active  {
     background-color: #1bd96a;
 
   }
@@ -131,7 +132,6 @@ table, th, td {
   @media screen and (max-width: 600px) {
     .nav.responsive {position: relative;}
     .nav.responsive .coll {
-      
       right: 0;
       top: 0;
     }
