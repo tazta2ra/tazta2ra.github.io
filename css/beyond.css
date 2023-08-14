@@ -28,7 +28,7 @@ body {
   /* -------------------------- */
 
 .container {
-  max-width: 90em;
+  max-width: 75em;
   position: relative;
   margin: 0 auto ;
   background-color: rgb(44, 44, 44);
