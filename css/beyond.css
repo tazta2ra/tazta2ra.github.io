@@ -124,6 +124,8 @@ p.border {
 
   }
 
+  /* -------------------------- */
+
   @media screen and (max-width: 952px) {
     .nav {transition: 0.2s;}
     .nav a:not(.active) {display: none;}
@@ -162,3 +164,31 @@ p.border {
 
   }
 
+
+
+  @media (prefers-color-scheme: light) {
+    .container {
+      background-color: aliceblue;
+      border: 2px solid rgb(0, 0, 0);
+    }
+    .content {
+      color: black;
+    
+    }
+    a {
+      color: black;
+    }
+    .nav {
+      background-color: #d6d6d6;
+      }
+    .nav a {
+        color: black;
+      }
+      .nav a:hover {
+        background-color: #939393;
+      }
+      table, th, td {
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+  }
