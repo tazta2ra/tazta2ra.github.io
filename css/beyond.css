@@ -46,7 +46,11 @@ body {
 code {
   color: white; 
   font-size: larger; 
-  background-color: black;
+  background-color: rgb(32, 30, 30);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+
 }
 
 details {
