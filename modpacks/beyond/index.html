@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Lotus: Beyond</title>
+    <link rel="icon" type="image/x-icon" href="/assets/beyond/beyond.ico">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+</head>
+<body>
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <picture class="branding-logo">
+          <source srcset="/assets/logo/logo_light.png" media="(prefers-color-scheme:dark)">
+          <img src="/assets/logo/logo_dark.png">
+        </picture>  
+        <b class="is-size-4">tazta2ra</b>
+      </a>
+  
+      <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <a class="navbar-item" href="/#projects">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fa fa-solid fa-folder"></i>
+            </span>
+            <span>Projects</span>
+          </span>
+        </a>
+        
+        <a class="navbar-item" href="/about">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fa fa-solid fa-question"></i>
+              </span>
+            <span>About</span>
+          </span>
+        </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+    </script>
+    
+    <br>
+    <br>
+    
+    
+<section class="hero is-medium is-info">   
+  <div class="hero-img is-head">        
+  <div class="hero-body hero-blur">
+    <div class="container has-text-centered">
+
+      
+
+      <p class="title ">
+         <img src="/assets/beyond/title_border.png"  alt="Blue Lotus: Beyond" style="width: 1000px;">   
+      </p>
+
+      <p class="subtitle cant-text">
+        A massive vanilla+ modpack focused on exploration and adventure while enhancing vanilla gamplay with lots of Quality of Life improvements.
+      </p>
+
+      
+      <div class="buttons is-centered">
+
+        
+            <a class="button is-primary" href="#download">
+                <span class="icon-text">
+                <span class="icon">
+                  <i class="fa fa-download"></i>
+                </span>
+                <span>Download</span>
+                </span>
+              </a>
+          
+          
+          
+          <a class="button is-light" href=" https://github.com/tazta2ra/bluelotus-beyond">
+            <span class="icon-text">
+              <span class="icon">
+                <i class=" fa fa-brands fa-github"></i>
+              </span>
+              <span> Source Code</span>
+              </span>
+          </a>
+
+          
+
+      </div>
+      
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="container">
+  
+    <div class="tabs is-centered is-size-5">
+        
+      <ul>
+        
+        <li class="is-active">
+          <a href=" ">
+            <span class="icon"><i class="fa fa-solid fa-book"></i></span>
+            <span>Info</span>
+          </a>
+        </li>
+
+        
+        <li class="">
+          <a href="/modpacks/beyond/faq">
+              <span class="icon"><i class="fa fa-solid fa-question"></i></span>
+              <span>FAQ</span>
+          </a>
+        </li>
+
+        
+        <li class="">
+          <a href="/modpacks/beyond/credits">
+            <span class="icon"><i class="fa fa-solid fa-address-book"></i></span>
+            <span>Credits</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>  
+  </section>
+
+    
+    <main>
+      
+<link rel="stylesheet" type="text/css" href="/css/beyond.css"> 
+
+
+<section class="section">
+<div class="container">
+
+  <div class="has-text-centered">
+  <p class="title is-size-1">Features</p>
+  <p class="subtitle">Blue Lotus brings many improvements to Minecraft's boring world.</p>
+</div>
+  <br>
+  <div class="tile is-ancestor">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+
+        <article class="tile is-child box has-background-primary">
+          <p class="title has-text-centered has-text-white-bis">🎭 Play your way!</p>
+          <p class="subtitle has-text-white-bis">Sart your game with different <b>Origins</b> or stick to the classic vanilla gameplay!</p>
+        </article>
+
+        <article class="tile is-child box has-background-warning ">
+          <p class="title has-text-centered has-text-black-bis">🍃 Enhanced visuals and Immerison</p>
+          <p class="subtitle has-text-black-bis">Ambient Sounds, built in shader support with <b>Iris</b>, dynamic lighting, <b>FogLooksGoodNow</b> and some awsome particle improvements thanks to <b>Explosive Enhancement</b> and <b>Falling Leaves</b>.</p>
+        </article>
+
+        <article class="tile is-child box has-background-info">
+          <p class="title has-text-centered has-text-white-bis">💎 New Materials</p>
+          <p class="subtitle has-text-white-bis">Many new, unique and interesting ores added by <b>Mythic Metals</b></p>
+        </article>
+
+      </div>
+    </div>
+    <div class="tile is-parent">
+
+      <article class="tile is-child box has-background-success">
+        <p class="title has-text-centered has-text-white-bis">🗺️ Improved world generation</p>
+        <p class="subtitle has-text-white-bis">Including better terrain with <b>Tectonic v2</b>, many new biomes added by <b>Regions Unexplored</b> & <b>Nullscape</b>, countless structure mods such as <b> Towns and Towers</b>, <b>Repurposed Structures</b> and <b>Yung's Better Structures</b>.</p>
+        <figure class="image is-4by3 is-centered">
+          <img src="https://cdn.modrinth.com/data/ElPWwjX0/images/b28d562a2d8ecf14419b3eeaf729b48049d3f261.png" style="height: auto; margin-top: auto; margin-bottom: auto;">
+        </figure>
+      </article>
+
+    </div>
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+
+          <article class="tile is-child box ">
+            <p class="title has-text-centered">🤠 Express yourself!</p>
+            <p class="subtitle"><b>Fabric Tailor</b>, <b>Ears</b>, <b>Bedspreads</b>, <b>More Armor Trims</b>, <b>Elytra Trims</b> and <b>Emoji Type</b> help you express yourself more than ever!</p>
+          </article>
+
+          <article class="tile is-child box has-background-danger">
+            <p class="title has-text-centered has-text-white-bis">📈 General QoL improvements</p>
+            <p class="subtitle has-text-white-bis">Supplementaries, Universal Enchants, Right Click Harvest, Reacharound, Leaves Be Gone, Better Statistics Screen...</p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+  <div class="has-text-centered">
+  <p class="title is-size-1">Made for multiplayer</p>
+  <p class="subtitle">Together or alone, with friend or foes!</p>
+  <p>Want to play on your server? Follow the installation instructions <a href="#download">here</a>!</p>
+  </div>
+  <br>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent is-vertical">
+
+      <article class="tile is-child box">
+        <p class="title has-text-centered">⏩ Optimized</p>
+        <p class="subtitle">Many optimization mods for a speedy performance</p>
+      </article>
+
+      <article class="tile is-child box">
+        <p class="title has-text-centered">🔊 Integrated Voice chat</p>
+        <p class="subtitle">Proximity voice chat has never been easier with <b>Simple Voice Chat</b>!</p>
+      </article>
+
+    </div>
+
+    <div class="tile is-parent is-vertical">
+      <article class="tile is-child box">
+        <p class="title has-text-centered">🪙 No more loot hoarding!</p>
+        <p class="subtitle">Every player has their own loot in chests thanks to <b>myLoot</b>!</p>
+      </article>
+
+      <article class="tile is-child box">
+        <p class="title has-text-centered">💤 Sleepy time</p>
+        <p class="subtitle">Only half of the players need to sleep to pass the night (<a href="https://modrinth.com/datapack/serversleep">Server Sleep</a>)</p>
+      </article>  
+
+    </div>
+
+    <div class="tile is-parent is-vertical">
+
+      <article class="tile is-child box">
+        <p class="title has-text-centered">👕 Brand new look!</p>
+        <p class="subtitle">Server side skin system, custom capes and more! (<a href="https://modrinth.com/mod/fabrictailor">Fabric Tailor</a>)</p>
+      </article>
+
+      <article class="tile is-child box">
+        <p class="title has-text-centered">🎈 Party time!</p>
+        <p class="subtitle">Create parties and claim your chunks</p>
+      </article>  
+
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+    <p class="title is-size-1 has-text-centered" id="download">How to install?</p>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="tile is-child box has-background-success content">
+          <p class="title has-text-centered has-text-white-bis">For Players</p>
+          <p class="has-text-white-bis">Download the <a href="https://modrinth.com/app">Modrinth App</a> or a launcher that supports modrinth (e.g. <a href="https://prismlauncher.org/">Prism Launcher</a>) then follow the <a href="https://docs.modrinth.com/docs/modpacks/playing_modpacks/#multimc-and-prism-launcher">installation instructions</a> for the launcher of your choice.</p>
+          <div class="buttons is-centered"><a href="https://modrinth.com/modpack/bluelotus-beyond" style="margin-top: auto; margin-bottom: auto;" class="button is-light">Modpack page on Modrinth</a></div>
+        </div>
+
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box has-background-warning content ">
+        <p class="title has-text-centered has-text-black-bis">For Servers</p>
+        <ul class="has-text-black-bis">
+          <li>Download the latest version of <a href="https://github.com/nothub/mrpack-install/releases">mrpack-install</a></li>
+          <li>Open the command line, navigate to the directory</li>
+          <li>Run <code>mrpack-install bluelotus-beyond 1.0.0</code></li>
+          <li>Wait for the download to finish</li>
+          <li>Navigate into the new "mc" folder</li>
+          <li>Now run <code>java -Xmx3G -Xms1G  -jar quilt-server-launch.jar</code></li>
+              <ul>Set <code>-Xmx</code> to the amount of RAM you want your server to use. (at least 2.5GB)</ul>
+           <li>You're Done!</li>
+      </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    </main>
+    <br>
+</body>
+
+<footer class="footer">
+<div class="content has-text-centered">
+    <p>
+      Made by tazta2ra with ❤️ 
+    </p>
+    <p>
+      Using <a href="https://bulma.io">Bulma</a>, <a href="https://11ty.dev">11ty</a> and <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> 
+    </p>
+  </div>
+</footer>
+
+
+</html>
+

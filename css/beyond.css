@@ -1,0 +1,71 @@
+
+.hero-img {
+    background-image: url(/assets/beyond/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(4px); */
+}
+
+.hero-blur{
+    backdrop-filter: blur(4px);
+}
+
+.cant-text {
+    text-shadow: 1px 2px 1px black;
+}
+
+code{
+    color:black
+}
+
+.has-text-black-bis a{
+    color: black;
+    text-decoration: underline;
+}
+.has-text-black-bis a:hover{
+    color: rgb(51, 51, 51);
+}
+
+.has-text-white-bis a:not(.button){
+    color: white;
+    text-decoration: underline;
+}
+.has-text-white-bis a:hover:not(.button){
+    color: rgb(196, 196, 196);
+}
+
+/*-------------------------------*/
+
+
+@media (prefers-color-scheme: dark) {
+    /* Primary Box */
+    .has-background-primary{
+        background-color: #1247e3 !important;
+    } 
+
+    /* Info Box */
+    .has-background-info{
+        background-color: hsl(204, 71%, 39%) !important;
+    }
+
+    /* Warning Box  */
+    .has-background-warning{
+        background-color: hsl(48, 69%, 45%) !important;
+    }
+
+    /* Success Box */
+    .has-background-success{
+        background-color: hsl(141, 53%, 31%) !important; 
+    }
+
+    /* Danger Box */
+    .has-background-danger{
+        background-color: hsl(348, 86%, 43%) !important;
+    }
+
+    code{
+        color:white
+    }
+}
+

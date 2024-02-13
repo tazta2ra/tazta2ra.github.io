@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/dark.ico">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+</head>
+<body>
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <picture class="branding-logo">
+          <source srcset="/assets/logo/logo_light.png" media="(prefers-color-scheme:dark)">
+          <img src="/assets/logo/logo_dark.png">
+        </picture>  
+        <b class="is-size-4">tazta2ra</b>
+      </a>
+  
+      <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <a class="navbar-item" href="/#projects">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fa fa-solid fa-folder"></i>
+            </span>
+            <span>Projects</span>
+          </span>
+        </a>
+        
+        <a class="navbar-item" href="/about">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fa fa-solid fa-question"></i>
+              </span>
+            <span>About</span>
+          </span>
+        </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+    </script>
+    
+    <br>
+    <br>
+    
+    
+<section class="hero is-medium">   
+  <div class=" is-head">        
+  <div class="hero-body ">
+    <div class="container has-text-centered">
+
+      
+
+      <p class="title is-size-1">
+        About   
+      </p>
+
+      <p class="subtitle cant-text">
+        
+      </p>
+
+      
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="container">
+    
+  </section>
+
+    
+    <main>
+      <section class="container">
+    <p class="subtitle has-text-centered">
+        We <i>(I)</i> like making funny stuff, but we are <i>(I'm)</i> very bad at everything... As you can tell i have no friends pls help
+        
+         </p>
+         <hr>
+         <p class="title is-size-2 has-text-centered">Members</p>
+         <div class="columns is-multiline is-variable is-0-mobile is-1-tablet is-3-desktop is-8-widescreen is-2-fullhd ">
+
+            <div class="column is-one-quarter has-text-centered">
+                <a href="https://github.com/Aninuscsalas">
+                    <div class="box is-shadowless ">
+                        <img src="https://avatars.githubusercontent.com/u/68734661?v=4" style="height: 100px;" alt="Avatar">
+                        <p class="title is-size-3"> Aninus Partikler</p>
+                
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <br>
+</section>
+
+    </main>
+    <br>
+</body>
+
+<footer class="footer">
+<div class="content has-text-centered">
+    <p>
+      Made by tazta2ra with ❤️ 
+    </p>
+    <p>
+      Using <a href="https://bulma.io">Bulma</a>, <a href="https://11ty.dev">11ty</a> and <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> 
+    </p>
+  </div>
+</footer>
+
+
+</html>
+
