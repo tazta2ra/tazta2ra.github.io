@@ -23,11 +23,11 @@
   "author": "tazta2ra",
   "license": "ISC",
   "devDependencies": {
+  },
+  "dependencies": {
     "@11ty/eleventy": "2.0.1",
     "bulma": "^0.9.4",
     "bulma-prefers-dark": "^0.1.0-beta.1",
     "node-sass": "^9.0.0"
-  },
-  "dependencies": {
   }
 }
