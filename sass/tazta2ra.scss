@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+$taztablue: #3967ef;
+$white: rgb(255, 255, 255);
+
+$primary: $taztablue;
+$link-dark: $white;
+
+@import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass";

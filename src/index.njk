@@ -1,0 +1,40 @@
+---
+
+layout: layouts/main.njk
+favicon: "/assets/logo/dark.ico"
+title: "tazta2ra"
+index_page: yes
+
+hero:
+  class: "hero is-large"
+  image: true
+  title: 
+    text: "tazta2ra"
+    class: "is-size-1"
+  text: "Failing to make stuff..."
+  buttons: 
+    first:
+      class: "is-primary"
+      link: "https://modrinth.com/organization/tazta2ra"
+      text: "Modrinth"
+      icon: "fa fa-home"
+
+    second:
+      class: "is-light"
+      link: "https://github.com/tazta2ra/"
+      text: "Github"
+      icon: "fa fa-brands fa-github"
+
+---
+
+<br>
+<section id="projects" class="container">
+
+  <p class="has-text-centered title is-size-1">Projects</p>
+  <p class="has-text-centered subtitle">Some cool projects made by us:</p>
+  <hr>
+  {% include "components/index/showcase.njk" %}
+  <hr>
+
+<br>
+</section>

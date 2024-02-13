@@ -1,0 +1,35 @@
+---
+
+layout: layouts/main.njk
+favicon: "/assets/logo/dark.ico"
+title: "About"
+
+hero:
+    class: "hero is-medium"
+    title: 
+        text: "About"
+        class: "is-size-1"
+
+---
+<section class="container">
+    <p class="subtitle has-text-centered">
+        We <i>(I)</i> like making funny stuff, but we are <i>(I'm)</i> very bad at everything... As you can tell i have no friends pls help
+        
+         </p>
+         <hr>
+         <p class="title is-size-2 has-text-centered">Members</p>
+         <div class="columns is-multiline is-variable is-0-mobile is-1-tablet is-3-desktop is-8-widescreen is-2-fullhd ">
+{% for members in members.members %}
+            <div class="column is-one-quarter has-text-centered">
+                <a href="{{members[2]}}">
+                    <div class="box is-shadowless ">
+                        <img src="{{members[1]}}" style="height: 100px;" alt="Avatar">
+                        <p class="title is-size-3"> {{members[0]}}</p>
+                
+                    </div>
+                </a>
+            </div>
+{% endfor %}
+        </div>
+        <br>
+</section>

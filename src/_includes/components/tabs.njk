@@ -1,0 +1,36 @@
+<section class="container">
+  {% if tabs %}
+    <div class="tabs is-centered is-size-5">
+        
+      <ul>
+        {% if tabs.first %}
+        <li class="{{ tabs.first.class }}">
+          <a href="{{ tabs.first.link }}">
+            <span class="icon"><i class="fa fa-solid {{ tabs.first.icon }}"></i></span>
+            <span>{{ tabs.first.text }}</span>
+          </a>
+        </li>
+        {%- endif %}
+
+        {% if tabs.second %}
+        <li class="{{ tabs.second.class }}">
+          <a href="{{ tabs.second.link }}">
+              <span class="icon"><i class="fa fa-solid {{ tabs.second.icon }}"></i></span>
+              <span>{{ tabs.second.text }}</span>
+          </a>
+        </li>
+        {%- endif %}
+
+        {% if tabs.third %}
+        <li class="{{ tabs.third.class }}">
+          <a href="{{ tabs.third.link }}">
+            <span class="icon"><i class="fa fa-solid {{ tabs.third.icon }}"></i></span>
+            <span>{{ tabs.third.text }}</span>
+          </a>
+        </li>
+        {%- endif %}
+        
+      </ul>
+    </div>
+  {%- endif %}  
+  </section>

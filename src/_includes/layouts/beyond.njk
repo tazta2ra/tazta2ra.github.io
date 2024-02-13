@@ -1,0 +1,49 @@
+---
+
+layout: "layouts/main.njk"
+favicon: "/assets/beyond/beyond.ico"
+
+hero:
+  class: "hero is-medium is-info"
+  title:
+   text: ' <img src="/assets/beyond/title_border.png"  alt="Blue Lotus: Beyond" style="width: 1000px;">'
+  blackgroundimg: "hero-img"
+  text: "A massive vanilla+ modpack focused on exploration and adventure while enhancing vanilla gamplay with lots of Quality of Life improvements."
+  blur: hero-blur
+  
+  buttons:
+    first:
+      class: "is-primary"
+      link: "#download"
+      text: "Download"
+      icon: "fa fa-download"
+
+    second:
+      class: "is-light"
+      link: "https://github.com/tazta2ra/bluelotus-beyond"
+      text: "Source Code"
+      icon: "fa fa-brands fa-github"  
+
+tabs:
+  first:
+    text: "Info"
+    icon: "fa-book"
+    link: "/modpacks/beyond"
+
+  second:
+    text: "FAQ"
+    icon: "fa-question"
+    link: "/modpacks/beyond/faq"
+
+  third:
+    text: "Credits"
+    icon: "fa-address-book"
+    link: "/modpacks/beyond/credits"
+
+---
+
+<link rel="stylesheet" type="text/css" href="/css/beyond.css"> 
+
+{{ content | safe }}
+
+

@@ -1,0 +1,62 @@
+{% if hero %}
+<section class="{{ hero.class }}">   
+  <div class="{{ hero.blackgroundimg }} is-head">        
+  <div class="hero-body {{ hero.blur }}">
+    <div class="container has-text-centered">
+
+      {% if hero.image %}
+        {% include "components/index/hero-picture.njk" %}
+      {% endif %}
+
+      <p class="title {{ hero.title.class }}">
+        {{ hero.title.text | safe }}   
+      </p>
+
+      <p class="subtitle cant-text">
+        {{ hero.text | safe }}
+      </p>
+
+      {% if hero.buttons %}
+      <div class="buttons is-centered">
+
+        {% if hero.buttons.first %}
+            <a class="button {{ hero.buttons.first.class }}" href="{{ hero.buttons.first.link }}">
+                <span class="icon-text">
+                <span class="icon">
+                  <i class="{{ hero.buttons.first.icon }}"></i>
+                </span>
+                <span>{{ hero.buttons.first.text }}</span>
+                </span>
+              </a>
+          {% endif %}
+          
+          {% if hero.buttons.second %}
+          <a class="button {{ hero.buttons.second.class }}" href=" {{ hero.buttons.second.link }}">
+            <span class="icon-text">
+              <span class="icon">
+                <i class=" {{ hero.buttons.second.icon }}"></i>
+              </span>
+              <span> {{ hero.buttons.second.text }}</span>
+              </span>
+          </a>
+
+          {% endif %}
+
+      </div>
+      {% endif %}
+
+      {% if index_page %}
+      <br>
+      <div class="is-centered container has-text-centered">
+        <a  href="#projects">
+          <span class="icon is-size-1 has-text-centered">
+            <i class="fa fa-solid fa-angle-down"></i>
+            </span>
+      </a>
+      </div>
+      {%- endif %}
+
+    </div>
+  </div>
+</section>
+{% endif %}
