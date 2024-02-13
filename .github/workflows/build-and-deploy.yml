@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: test
-        run: npm ci
+        run: npm i
 
       - name: Install packages
         run: npm ci
