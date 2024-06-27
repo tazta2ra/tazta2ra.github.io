@@ -3,8 +3,13 @@
 $taztablue: #3967ef;
 $white: rgb(255, 255, 255);
 
-$primary: $taztablue;
-$link-dark: $white;
+@use "bulma/sass" with (
+  $family-primary: '"Nunito", sans-serif',
+  $primary: $taztablue
+);
 
-@import "../node_modules/bulma/bulma.sass";
-@import "../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass";
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+.grid .box:last-child{
+  margin-bottom: var(--bulma-block-spacing);
+  }

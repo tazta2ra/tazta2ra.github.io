@@ -12,6 +12,7 @@
 }
 
 .cant-text {
+    color: aliceblue;
     text-shadow: 1px 2px 1px black;
 }
 
@@ -37,32 +38,31 @@ code{
 
 /*-------------------------------*/
 
-
-@media (prefers-color-scheme: dark) {
-    /* Primary Box */
+/*
     .has-background-primary{
         background-color: #1247e3 !important;
     } 
 
-    /* Info Box */
     .has-background-info{
         background-color: hsl(204, 71%, 39%) !important;
     }
 
-    /* Warning Box  */
     .has-background-warning{
         background-color: hsl(48, 69%, 45%) !important;
     }
 
-    /* Success Box */
     .has-background-success{
         background-color: hsl(141, 53%, 31%) !important; 
     }
 
-    /* Danger Box */
+
     .has-background-danger{
         background-color: hsl(348, 86%, 43%) !important;
-    }
+    } 
+*/
+
+@media (prefers-color-scheme: dark) {
+
 
     code{
         color:white

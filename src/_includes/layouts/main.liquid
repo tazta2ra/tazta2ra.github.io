@@ -11,22 +11,22 @@
 
 </head>
 <body>
-    {% include "partials/navbar.njk" %}
+    {% include "partials/navbar.liquid" %}
     
     <br>
     <br>
     
-    {% include "components/hero.njk" %}
+    {% include "components/hero.liquid" %}
 
-    {% include "components/tabs.njk" %}
-    
+    {% include "components/tabs.liquid" %}
+    <br>
     <main>
-      {{ content | safe }}
+      {{ content }}
     </main>
     <br>
 </body>
 
-{% include "partials/footer.njk" %}
+{% include "partials/footer.liquid" %}
 
 </html>
 

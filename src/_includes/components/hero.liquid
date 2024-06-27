@@ -5,15 +5,15 @@
     <div class="container has-text-centered">
 
       {% if hero.image %}
-        {% include "components/index/hero-picture.njk" %}
+        {% include "components/index/hero-picture.liquid" %}
       {% endif %}
 
       <p class="title {{ hero.title.class }}">
-        {{ hero.title.text | safe }}   
+        {{ hero.title.text }}   
       </p>
 
       <p class="subtitle cant-text">
-        {{ hero.text | safe }}
+        {{ hero.text }}
       </p>
 
       {% if hero.buttons %}

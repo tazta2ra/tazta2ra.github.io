@@ -1,6 +1,6 @@
 ---
 
-layout: layouts/main.njk
+layout: layouts/main.liquid
 favicon: "/assets/logo/dark.ico"
 title: "tazta2ra"
 index_page: yes
@@ -29,12 +29,16 @@ hero:
 
 <br>
 <section id="projects" class="container">
+  
+  <div class="block">
+    <p class="has-text-centered title is-size-1">Projects</p>
+    <p class="has-text-centered subtitle">Some cool projects made by us:</p>
+  </div>
 
-  <p class="has-text-centered title is-size-1">Projects</p>
-  <p class="has-text-centered subtitle">Some cool projects made by us:</p>
   <hr>
-  {% include "components/index/showcase.njk" %}
+    {% include "components/index/showcase.liquid" test: "modpacks" %}
   <hr>
+
 
 <br>
 </section>
